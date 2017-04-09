@@ -48,10 +48,10 @@ class Triangle(object):
         t = Triangle(self.baseW, self.height)
         return 'Base of: ' + str(self.baseW) + ' | ' + 'Height: ' + str(self.height) + ' | ' + 'Area: ' + str(t.get_area())
 
-    def __add__(self, otherBaseW, otherH):
+    def __add__(self, other):
         newTriangle = Triangle()
-        newTriangle.baseW = self.baseW + otherBaseW
-        newTriangle.height = self.height + otherH
+        newTriangle.baseW = self.baseW + other.baseW
+        newTriangle.height = self.height + other.height
         return newTriangle
 
 t1 = Triangle(2,3)
